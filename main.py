@@ -13,10 +13,12 @@ import datetime
 from PIL import Image, ImageDraw, ImageFont
 import io
 
-
-PREFIX = '~'
-WORD_LENGTH_MIN = 4
-WORD_LENGTH_MAX = 7
+with open("config.json","r") as f:
+    config = json.load(f)
+PREFIX = config["default_prefix"]
+WORD_LENGTH_MIN = config["word_length_min"]
+WORD_LENGTH_MAX = config["word_length_max"]
+TOKEN = config["bot_key"]
 
 words = {}
 all_words_1 = set(all_words_list.words())
@@ -463,4 +465,4 @@ async def reset_wins(ctx):
 
 
 
-bot.run("OTM5OTg5MzA3NTY4MDQ2MTgx.YgA3Qw.hWzdy1UXBlA8KJSvRtvnjuY7lkk")
+bot.run(TOKEN)
