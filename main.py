@@ -376,7 +376,7 @@ async def daily(ctx):
     player["yellow"] = []
     player["black"] = []
 
-    await ctx.send(f"Daily Word started! {ctx.author.mention}, you have {player['num_guesses']} tries to guess the hidden word.\nMake a guess by DMing me a single word.")
+    await ctx.author.send(f"Daily Word started! You have {player['num_guesses']} tries to guess the hidden word.\nMake a guess by messaging me a single word in this DM channel.")
 
     with open("users.json", "w") as f:
         json.dump(users, f, indent=4)
@@ -419,9 +419,9 @@ async def rand(ctx, length=5):
     player["black"] = []
 
     if length == 1:
-        await ctx.send("Letterle mode started! {ctx.author.mention}, try to guess the hidden letter in as little guesses as you can!")
+        await ctx.author.send("Letterle mode started! Try to guess the hidden letter in as little guesses as you can!")
     else:
-        await ctx.send(f"Random Word started! {ctx.author.mention}, you have {player['num_guesses']} tries to guess the hidden word.\nMake a guess by DMing me a single word.")
+        await ctx.author.send(f"Random Word started! You have {player['num_guesses']} tries to guess the hidden word.\nMake a guess by messaging me a single word in this DM channel.")
 
     with open("users.json", "w") as f:
         json.dump(users, f, indent=4)
