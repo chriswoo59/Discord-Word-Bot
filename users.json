@@ -1,0 +1,50 @@
+{
+    "171777619082215424": {
+        "word": null,
+        "channel": null,
+        "mode": null,
+        "squares": [
+            ":white_large_square: :yellow_square: :white_large_square: :white_large_square: :white_large_square:",
+            ":white_large_square: :yellow_square: :white_large_square: :yellow_square: :white_large_square:",
+            ":yellow_square: :yellow_square: :white_large_square: :green_square: :white_large_square:",
+            ":green_square: :green_square: :green_square: :white_large_square: :yellow_square:",
+            ":green_square: :green_square: :green_square: :green_square: :green_square:"
+        ],
+        "guesses": [
+            "pious",
+            "weary",
+            "riven",
+            "bribe",
+            "brief"
+        ],
+        "num_guesses": 0,
+        "green": [
+            "e",
+            "b",
+            "r",
+            "i",
+            "f"
+        ],
+        "yellow": [
+            "i",
+            "e",
+            "r"
+        ],
+        "black": [
+            "p",
+            "o",
+            "u",
+            "s",
+            "w",
+            "a",
+            "y",
+            "v",
+            "n",
+            "b"
+        ],
+        "wins": 63,
+        "daily_win_streak": 2,
+        "last_daily": "2022-03-15",
+        "auto_post_results": true
+    }
+}
