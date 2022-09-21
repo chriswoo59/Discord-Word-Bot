@@ -1,17 +1,48 @@
 {
     "171777619082215424": {
-        "word": "honor",
-        "channel": 864309243288748035,
-        "mode": "random",
-        "squares": [],
-        "guesses": [],
-        "num_guesses": 6,
-        "green": [],
-        "yellow": [],
-        "black": [],
-        "wins": 64,
+        "word": null,
+        "channel": null,
+        "mode": null,
+        "squares": [
+            ":green_square: :white_large_square: :white_large_square: :white_large_square: :white_large_square:",
+            ":white_large_square: :yellow_square: :yellow_square: :yellow_square: :white_large_square:",
+            ":green_square: :yellow_square: :yellow_square: :yellow_square: :white_large_square:",
+            ":green_square: :yellow_square: :yellow_square: :white_large_square: :yellow_square:",
+            ":green_square: :green_square: :yellow_square: :white_large_square: :yellow_square:",
+            ":green_square: :green_square: :green_square: :green_square: :green_square:"
+        ],
+        "guesses": [
+            "pious",
+            "weary",
+            "pears",
+            "prate",
+            "parse",
+            "paper"
+        ],
+        "num_guesses": 0,
+        "green": [
+            "p",
+            "a",
+            "e",
+            "r"
+        ],
+        "yellow": [
+            "e",
+            "a",
+            "r"
+        ],
+        "black": [
+            "i",
+            "o",
+            "u",
+            "s",
+            "w",
+            "y",
+            "t"
+        ],
+        "wins": 66,
         "daily_win_streak": 2,
-        "last_daily": "2022-03-20",
+        "last_daily": "2022-09-21",
         "auto_post_results": true
     }
 }

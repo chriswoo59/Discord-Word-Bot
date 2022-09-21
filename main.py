@@ -3,7 +3,7 @@ from typing import Type
 import discord
 from discord.enums import try_enum
 from discord.ext import commands
-from pretty_help import PrettyHelp
+# from pretty_help import PrettyHelp
 from nltk.corpus import words as all_words_list
 from english_words import english_words_lower_alpha_set
 from inflector import Inflector
@@ -227,8 +227,14 @@ async def guess(msg):
         json.dump(users, f, indent=4)
 
 """ STARTING THE BOT """
+#Privileged intents must be authorized if bot is in 100+ servers
+intents = discord.Intents.default()
+intents.members = True
+intents.message_content = True
+
 # Setting help menu using discord-pretty-print
-bot = commands.Bot(command_prefix = init_prefix, help_command=PrettyHelp())
+# bot = commands.Bot(command_prefix = init_prefix, help_command=PrettyHelp())
+bot = commands.Bot(command_prefix = init_prefix, intents=intents)
 
 """ BOT EVENTS """
 
@@ -304,6 +310,7 @@ async def add_new_user(ctx):
 @bot.command(hidden=True)
 async def test(ctx):
     if ctx.author.id != 171777619082215424: # Only command for me
+        ctx.send("Command only useable by bot creator.");
         return
     print("TEST")
     await ctx.send("TEST MESSAGE :white_large_square: :green_square:")
